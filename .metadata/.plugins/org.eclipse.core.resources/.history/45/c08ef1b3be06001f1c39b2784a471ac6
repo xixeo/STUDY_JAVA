@@ -1,0 +1,50 @@
+package quiz;
+
+abstract class Drink {
+	String drink;
+	public abstract void drink();
+}
+
+class Juice extends Drinks{
+	public void drink(String drink) {
+		System.out.println("주스를 마십니다.");
+
+	}
+}
+
+class Coffee extends Drinks{
+	public void drink() {
+		System.out.println("커피를 마십니다.");
+
+	}
+}
+
+class Beer extends Drinks{
+	public void drink() {
+		System.out.println("맥주를 마십니다.");
+
+	}
+}
+
+class Water extends Drinks{
+	public void drink() {
+		System.out.println("물을 마십니다.");
+
+	}
+}
+
+class Tea extends Drinks{
+	public void drink() {
+		System.out.println("차를 마십니다.");
+
+	}
+}
+
+public class Drinks{
+	public static void main(String[] args) {
+		Drinks[] drinks = {
+
+		}
+
+	}
+}
