@@ -1,0 +1,9 @@
+package quiz;
+
+abstract class Geometry2 {
+
+
+	public abstract double getArea();
+	public abstract double getLength();
+}
+

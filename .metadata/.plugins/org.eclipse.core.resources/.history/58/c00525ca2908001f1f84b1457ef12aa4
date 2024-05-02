@@ -1,0 +1,21 @@
+package quiz;
+
+abstract class Geometry2 {
+	public abstract double getArea();
+	public abstract double getLength();
+}
+
+class Point extends Geometry2{
+	
+	@Override
+	public double getArea() {
+		
+		
+	}
+	
+	@Override
+	public double getLength() {
+		
+		
+	}
+}

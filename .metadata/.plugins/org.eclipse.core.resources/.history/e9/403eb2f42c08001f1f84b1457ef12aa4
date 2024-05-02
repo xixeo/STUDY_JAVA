@@ -1,0 +1,12 @@
+package quiz;
+
+import java.util.List;
+
+class Geometryy{
+	List<Integer> xArr;
+	List<Integer> yArr;
+}
+
+public class GeometfyMethods {
+
+}

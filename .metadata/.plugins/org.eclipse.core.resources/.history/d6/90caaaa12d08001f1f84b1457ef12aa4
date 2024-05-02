@@ -1,0 +1,74 @@
+package quiz;
+
+import java.util.ArrayList;
+import java.util.List;
+
+abstract class Geometryy{
+	List<Integer> xArr = new ArrayList<>();
+	List<Integer> yArr = new ArrayList<>();
+	abstract double getArea();
+	abstract double getLength();
+}
+
+class Point extends Geometryy{
+	
+	public Point(int x, int y) {
+		xArr.add(x);
+		yArr.add(y);
+	}
+
+	@Override
+	double getArea() {
+		return 0;
+	}
+
+	@Override
+	double getLength() {
+		return 0;
+	}
+	
+	public String toString() {
+		return "[" + xArr.get(0) + yArr.get(0) + "]";
+	}
+	
+}
+
+class Line extends Geometryy{
+
+	public Line(int x1, int y1, int x2, int y2) {
+		xArr.add(x1);
+		yArr.add(y1);
+		xArr.add(x2);
+		yArr.add(y2);
+	}
+	
+	@Override
+	double getArea() {
+		return 0;
+	}
+
+	@Override
+	double getLength() {
+		return 0;
+	}
+	
+}
+
+class PolyLine extends Geometryy{
+
+	@Override
+	double getArea() {
+		return 0;
+	}
+
+	@Override
+	double getLength() {
+		return 0;
+	}
+	
+}
+
+public class GeometryMethods {
+	
+
+}
