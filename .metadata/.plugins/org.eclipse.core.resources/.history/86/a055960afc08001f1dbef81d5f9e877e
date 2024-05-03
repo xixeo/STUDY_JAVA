@@ -1,0 +1,26 @@
+package quiz;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class MReader {
+	public static void main(String[] args) {
+		String filename = "m.txt"; //문자열 저장
+
+		// 파일 읽기
+		try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+			String line;
+			while ((line = reader.readLine()) != null) { //파일에서 한 줄씩 읽기
+				String[] numbersStr = line.split(" "); 
+				for (String numStr : numbersStr) {
+					int num = Integer.parseInt(numStr); 
+					System.out.print(num + " "); 
+				}
+				System.out.println();
+			}
+		} catch (Exception e) {
+			e.printStackTrace(); 
+		}
+	}
+
+}
