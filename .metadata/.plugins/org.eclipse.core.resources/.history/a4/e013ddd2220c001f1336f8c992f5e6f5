@@ -1,0 +1,50 @@
+package quiz;
+
+import java.util.Arrays;
+import java.util.Random;
+
+/*
+ * 정수 배열을 정렬후 출력
+ * 실수 배열을 정렬후 출력
+ * 스트링 배열을 정렬후 출력하는 코드 완성 
+ */
+
+public class Int {
+	
+static void showData(Object[]data) {
+//		정수배열
+	int a1 = 0; 
+	for (int i = 0; i < data.length - 1; i++) {
+		for (int j = i + 1; j < data.length; j++) {
+			
+			if(data[i] > data[j]) {
+				a1 = data[i];		// i번째 수가 클 때 j번째 수랑 인덱스 바꿔주기
+				data[i] = data[j]; 
+				data[j] = a1;
+			}
+		}
+	}
+	
+	for (int i = 0; i < arr.length; i++) {	// 정렬된 순서대로 출력
+		System.out.println(arr[i]);
+	}
+    
+//		실수배열
+	}
+public static void main(String[] args) {
+	int [] data = new int[20];
+	double []doubleData = new double[20];
+	String [] stringData = {"apple","grape","blueberry","banana"};
+	
+	Random rnd = 
+			for (int i = 0; i < data.length; i++)
+		
+	Arrays.sort(data);
+	showData(data);
+	Arrays.sort(doubleData);
+	showData(doubleData);
+	Arrays.sort(stringData);
+	showData(stringData);
+	//출력 
+}
+}
