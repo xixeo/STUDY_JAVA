@@ -1,9 +1,9 @@
 package CH13;
 
 //generic 대신에 객체 사용한 방법으로 생략
-class Bag {
+class Bagg{
 	private Object thing;
-	public Bag(Object thing) {
+	public Bagg(Object thing) {
 		this.thing = thing;
 	}
 	public Object getThing() {
@@ -25,15 +25,15 @@ class Notebook2 {
 
 public class BagTestObject {
 	public static void main(String[] args) {
-		Bag bag = new Bag(new Book2());
-		Bag bag2 = new Bag(new PencilCase2());
-		Bag bag3 = new Bag(new Notebook2()); 
+		Bagg bag = new Bagg(new Book2());
+		Bagg bag2 = new Bagg(new PencilCase2());
+		Bagg bag3 = new Bagg(new Notebook2()); 
 
 		bag.showType();
 		bag2.showType();
 		bag3.showType();
 
-		//bag = bag2;//error를 발생시키지 않지만 잘 못된 코드이다
+//		bag = bag2;//error를 발생시키지 않지만 잘 못된 코드이다
 		/*
 		Book book = bag.getThing();
 		PencilCase pc = bag2.getThing();

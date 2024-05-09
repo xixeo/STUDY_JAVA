@@ -1,5 +1,0 @@
-package CH11;
-
-public class NagativeNumberException extends Exception{
-	super("음수는 허용하지 않습니다.");
-}
